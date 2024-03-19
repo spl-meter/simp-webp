@@ -1,29 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Page</title>
+    <title>Full Page IFrame</title>
+    <style>
+        /* Remove margins and padding from the body to ensure the iframe covers the whole page */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden; /* Optional: Prevent scrolling on the main document */
+        }
+        /* Make the iframe cover the full page */
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none; /* Optional: Remove the border around the iframe */
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello, World?!</h1>
-    <img src="https://www.allperfectstories.com/wp-content/uploads/2020/07/Business-Success.jpg" alt="A descriptive alternate text for your immage">
 
-
-
-
-    <h2>Outer Webpage</h2>
-    <p>This is the content of the outer webpage. Below is an embedded webpage inside an iframe:</p>
-
-    <!-- IFrame Embedding -->
-    <iframe src="https://en.wikipedia.org/wiki/Flower" width="600" height="400">
-        Your browser does not support iframes.
-    </iframe>
-
-    <p>Content continues after the iframe...</p>
+<iframe src="https://en.wikipedia.org/wiki/Flower" frameborder="0" allowfullscreen></iframe>
 
 </body>
 </html>
-
-</html>
-
